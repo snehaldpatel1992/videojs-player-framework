@@ -1,0 +1,13 @@
+{
+  "name": "videojs-github",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  },
+  "overrides": {
+
+  },
+  "devDependencies": {
+
+  }
+}

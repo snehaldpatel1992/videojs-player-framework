@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Video.js | HTML5 Video Player</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- build:css(.) styles/vendor.css -->
+    <link href="/node_modules/video.js/dist/video-js.min.css" rel="stylesheet" type="text/css">
+    <link href="/node_modules/videojs-thumbnails/videojs.thumbnails.css" rel="stylesheet" type="text/css">
+    <link href="/node_modules/videojs-resolution-switcher/lib/videojs-resolution-switcher.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="/node_modules/videojs-playlist-ui/dist/videojs-playlist-ui.vertical.css" rel="stylesheet">
+
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/vjs-skin.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+</head>
+<body>
+
+<video id="video_element" class="video-js videojs-default-skin" controls preload="true" width="640" height="264"
+       poster="">
+
+    <source src="https://vjs.zencdn.net/v/oceans.mp4?sd" type='video/mp4' label='SD' res='480' />
+    <source src="https://vjs.zencdn.net/v/oceans.mp4?hd" type='video/mp4' label='HD' res='1080'/>
+    <source src="https://vjs.zencdn.net/v/oceans.mp4?phone" type='video/mp4' label='phone' res='144'/>
+    <source src="https://vjs.zencdn.net/v/oceans.mp4?4k" type='video/mp4' label='4k' res='2160'/>
+
+    <p class="videojs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+</video>
+
+<ol class="vjs-playlist">
+    <!--
+         The contents of this element will be filled based on the
+         currently loaded playlist
+      -->
+</ol>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+
+<!-- build:js(.) scripts/plugins.js -->
+<script src="/node_modules/video.js/dist/ie8/videojs-ie8.min.js"></script>
+<script src="/node_modules/video.js/dist/video.min.js"></script>
+<script src="/node_modules/videojs-resolution-switcher/lib/videojs-resolution-switcher.js"></script>
+<script src='/node_modules/videojs-thumbnails/videojs.thumbnails.js'></script>
+<script src="/node_modules/videojs-playlist/dist/global.js"></script>
+<script src="/node_modules/videojs-playlist-ui/dist/videojs-playlist-ui.js"></script>
+<!-- endbuild -->
+
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/playlist.js"></script>
+<!-- endbuild -->
+
+
+
+
+</body>
+</html>
