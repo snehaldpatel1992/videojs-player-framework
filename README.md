@@ -3,7 +3,9 @@ This framework builds custom videojs player.
 
  
 app/index.html : contains videojs player with captions , resolution selector  
+
 app/player_with_list.html : contains an example of videojs player with playlist
+
 app/youtube_player.html : plays video from youtube based on specified video id 
 
 
